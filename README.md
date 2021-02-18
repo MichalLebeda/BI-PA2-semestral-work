@@ -5,7 +5,14 @@
 ![Game](screenshot.png?raw=true "Game")  
 
 ## Build
-Run and compile (if necessary) the project:  
+Dependencies:   
+```
+sdl2
+sdl2_image
+sdl2_ttf
+```
+
+Run and compile (if necessary) the project:
 ```make run```
 
 Build:
