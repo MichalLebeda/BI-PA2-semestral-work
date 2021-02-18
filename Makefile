@@ -26,7 +26,7 @@ LINKER_FLAGS = $(SDL_LINKER_FLAGS)
 
 OBJ_NAME = semestral-work
 
-all: doc compile
+all: doc build
 
 $(OBJDIR)/%.o: %.cpp
 	@mkdir -p '$(@D)'
@@ -36,7 +36,7 @@ $(OBJ_NAME): $(OBJ)
 	mkdir -p save
 	$(CC) $(LINKER_FLAGS) -o $(OBJ_NAME) $(OBJ)
 
-compile: $(OBJ_NAME)
+build: $(OBJ_NAME)
 
 run: $(OBJ_NAME)
 	./$(OBJ_NAME)
