@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="left-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="72">
+ <tileset firstgid="1" source="atlas.tsx"/>
+ <tileset firstgid="257" source="walls.tsx"/>
+ <layer id="1" name="floor" width="10" height="10">
+  <data encoding="csv">
+66,66,66,66,66,66,66,66,66,66,
+66,64,57,66,66,66,66,76,77,66,
+66,72,73,66,66,66,66,76,77,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66
+</data>
+ </layer>
+ <layer id="3" name="walls" width="10" height="10">
+  <data encoding="csv">
+269,260,260,257,271,271,257,284,285,269,
+270,0,0,0,0,0,0,0,0,269,
+270,0,0,0,0,0,0,0,0,269,
+269,266,266,266,272,267,0,265,266,269,
+270,0,0,0,263,0,0,0,0,268,
+270,0,0,0,263,0,0,0,0,268,
+270,0,0,0,264,0,0,0,0,268,
+270,0,0,0,0,0,0,0,0,268,
+270,0,0,0,0,0,0,0,0,268,
+269,272,272,272,272,272,272,272,272,269
+</data>
+ </layer>
+ <objectgroup id="4" name="collision">
+  <object id="63" x="0" y="144" width="160" height="16"/>
+  <object id="64" x="144" y="0" width="16" height="144"/>
+  <object id="65" x="0" y="0" width="144" height="16"/>
+  <object id="66" x="0" y="16" width="16" height="128"/>
+  <object id="67" x="16" y="48" width="76" height="16"/>
+  <object id="68" x="116" y="48" width="28" height="16"/>
+  <object id="69" x="64" y="64" width="16" height="48"/>
+  <object id="70" x="128" y="16" width="16" height="32">
+   <properties>
+    <property name="stairs" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="71" x="16" y="16" width="16" height="32">
+   <properties>
+    <property name="stairs" type="int" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

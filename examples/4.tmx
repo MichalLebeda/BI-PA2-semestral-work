@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.5" orientation="orthogonal" renderorder="left-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="6" nextobjectid="124">
+ <tileset firstgid="1" source="atlas.tsx"/>
+ <tileset firstgid="513" source="walls.tsx"/>
+ <layer id="1" name="floor" width="10" height="10">
+  <data encoding="csv">
+66,66,66,222,66,237,222,60,61,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,141,142,66,66,66,66,
+66,66,66,66,143,144,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,66,66,66,
+66,66,66,66,66,66,66,76,77,66,
+66,66,66,66,66,66,66,72,73,66,
+66,66,66,66,66,66,66,66,66,66
+</data>
+ </layer>
+ <layer id="2" name="walls" width="10" height="10">
+  <data encoding="csv">
+525,516,516,513,516,513,513,516,516,525,
+526,0,0,0,0,0,0,0,0,524,
+526,0,0,0,0,0,0,0,0,524,
+526,0,0,0,0,0,0,0,0,524,
+526,0,0,0,0,0,0,0,0,524,
+526,0,0,0,0,0,0,0,0,524,
+526,0,0,0,0,0,0,532,533,525,
+526,0,0,0,0,0,0,0,0,524,
+526,0,0,0,0,0,0,0,0,524,
+525,528,528,528,528,528,528,528,528,525
+</data>
+ </layer>
+ <objectgroup id="3" name="collision" visible="0">
+  <object id="63" x="0" y="144" width="160" height="16"/>
+  <object id="64" x="144" y="0" width="16" height="144"/>
+  <object id="65" x="0" y="0" width="144" height="16"/>
+  <object id="66" x="0" y="16" width="16" height="128"/>
+  <object id="71" x="70" y="46" width="20" height="2">
+   <properties>
+    <property name="type" type="int" value="-1"/>
+   </properties>
+  </object>
+  <object id="120" x="139" y="112" width="5" height="32">
+   <properties>
+    <property name="type" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="122" x="116" y="96" width="28" height="16"/>
+ </objectgroup>
+ <objectgroup id="5" name="items"/>
+ <objectgroup id="4" name="enemies"/>
+</map>
