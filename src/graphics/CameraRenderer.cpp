@@ -15,7 +15,7 @@ CameraRenderer::CameraRenderer(SDL_Renderer *renderer, SDL_Rect originalRect) {
 
     SDL_RenderSetScale(renderer, currentZoom, currentZoom);
 
-    font = TTF_OpenFont("examples/font.ttf", 32);
+    font = TTF_OpenFont("assets/font.ttf", 32);
 }
 
 CameraRenderer::~CameraRenderer() {

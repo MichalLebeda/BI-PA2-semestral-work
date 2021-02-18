@@ -10,7 +10,7 @@ using namespace std;
 
 Assets::Assets(SDL_Renderer *renderer) {
     this->renderer = renderer;
-    loadTexture("examples/atlas.png", atlasTexture);
+    loadTexture("assets/atlas.png", atlasTexture);
 
     tileRegions = createRegions(16, 16, 0, 16 * 32, atlasTexture);
 

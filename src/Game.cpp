@@ -181,7 +181,7 @@ void Game::input() {
                         rpgPlayer->deserialize(playerFile);
 
                         currentLevelIndex = rpgPlayer->getLevelIndex();
-                        level = new Level(currentLevelIndex, "examples/" + to_string(currentLevelIndex) + ".map",
+                        level = new Level(currentLevelIndex, "assets/" + to_string(currentLevelIndex) + ".map",
                                           assets,
                                           cameraRenderer,
                                           Level::PlayerLocation::LOADED_FROM_FILE, rpgPlayer);
@@ -314,7 +314,7 @@ void Game::startFromBeginning() {
 
     hud = new Hud(width, height, rpgPlayer, assets);
 
-    level = new Level(currentLevelIndex, "examples/" + to_string(currentLevelIndex) + ".map", assets,
+    level = new Level(currentLevelIndex, "assets/" + to_string(currentLevelIndex) + ".map", assets,
                       cameraRenderer,
                       Level::PlayerLocation::NEXT_TO_STAIRS_UP, rpgPlayer);
 }
@@ -325,7 +325,7 @@ void Game::levelDown() {
         rpgPlayer->setLevelIndex(currentLevelIndex);
 
         delete level;
-        level = new Level(currentLevelIndex, "examples/" + to_string(currentLevelIndex) + ".map", assets,
+        level = new Level(currentLevelIndex, "assets/" + to_string(currentLevelIndex) + ".map", assets,
                           cameraRenderer,
                           Level::PlayerLocation::NEXT_TO_STAIRS_UP, rpgPlayer);
     } else {
@@ -339,7 +339,7 @@ void Game::levelUp() {
         rpgPlayer->setLevelIndex(currentLevelIndex);
 
         delete level;
-        level = new Level(currentLevelIndex, "examples/" + to_string(currentLevelIndex) + ".map", assets,
+        level = new Level(currentLevelIndex, "assets/" + to_string(currentLevelIndex) + ".map", assets,
                           cameraRenderer,
                           Level::PlayerLocation::NEXT_TO_STAIRS_DOWN, rpgPlayer);
     }
