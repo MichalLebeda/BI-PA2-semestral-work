@@ -38,7 +38,7 @@ $(OBJ_NAME): $(OBJ)
 
 compile: $(OBJ_NAME)
 
-run:
+run: $(OBJ_NAME)
 	./$(OBJ_NAME)
 
 clean:
